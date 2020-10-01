@@ -15,6 +15,7 @@
 		47187FE72523FC2F004E350B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47187FE52523FC2F004E350B /* LaunchScreen.storyboard */; };
 		47187FEF25254A9B004E350B /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47187FEE25254A9B004E350B /* QuestionViewController.swift */; };
 		47187FF125254AB1004E350B /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47187FF025254AB1004E350B /* ResultsViewController.swift */; };
+		47187FF325265915004E350B /* Question Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47187FF225265915004E350B /* Question Data.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		47187FE82523FC2F004E350B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		47187FEE25254A9B004E350B /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		47187FF025254AB1004E350B /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		47187FF225265915004E350B /* Question Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Question Data.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				47187FE82523FC2F004E350B /* Info.plist */,
 				47187FEE25254A9B004E350B /* QuestionViewController.swift */,
 				47187FF025254AB1004E350B /* ResultsViewController.swift */,
+				47187FF225265915004E350B /* Question Data.swift */,
 			);
 			path = "Personality Quiz";
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47187FF325265915004E350B /* Question Data.swift in Sources */,
 				47187FDF2523FC28004E350B /* IntroductionViewController.swift in Sources */,
 				47187FEF25254A9B004E350B /* QuestionViewController.swift in Sources */,
 				47187FDB2523FC28004E350B /* AppDelegate.swift in Sources */,
