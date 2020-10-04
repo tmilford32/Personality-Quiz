@@ -39,8 +39,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="l14-Nd-suX">
-                                <rect key="frame" x="16" y="325.5" width="382" height="34.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="l14-Nd-suX">
+                                <rect key="frame" x="16" y="325.5" width="382" height="245"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Which City Are You From?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fug-4f-mSn">
                                         <rect key="frame" x="0.0" y="0.0" width="382" height="34.5"/>
@@ -49,19 +49,13 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mwj-lL-C2W">
-                                        <rect key="frame" x="0.0" y="34.5" width="382" height="0.0"/>
+                                        <rect key="frame" x="0.0" y="55.5" width="382" height="189.5"/>
                                         <state key="normal" title="Begin Personality Quiz"/>
                                         <connections>
                                             <segue destination="V3x-cC-bBG" kind="show" id="ow7-qE-Cjg"/>
                                         </connections>
                                     </button>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="fug-4f-mSn" firstAttribute="centerY" secondItem="l14-Nd-suX" secondAttribute="centerY" id="4N1-pg-N64"/>
-                                    <constraint firstItem="fug-4f-mSn" firstAttribute="centerY" secondItem="l14-Nd-suX" secondAttribute="centerY" id="P3l-as-eOS"/>
-                                    <constraint firstItem="fug-4f-mSn" firstAttribute="centerX" secondItem="l14-Nd-suX" secondAttribute="centerX" id="PVL-Fp-t1x"/>
-                                    <constraint firstItem="fug-4f-mSn" firstAttribute="centerX" secondItem="l14-Nd-suX" secondAttribute="centerX" id="RjT-RO-obl"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -71,12 +65,14 @@
                             <constraint firstItem="0TY-Cc-JLo" firstAttribute="trailing" secondItem="U3K-63-Xpg" secondAttribute="trailing" constant="16" id="88P-OO-OJe"/>
                             <constraint firstItem="0TY-Cc-JLo" firstAttribute="bottom" secondItem="dmS-9z-BYg" secondAttribute="bottom" constant="20" id="AzZ-zj-orL"/>
                             <constraint firstItem="0TY-Cc-JLo" firstAttribute="trailing" secondItem="U3K-63-Xpg" secondAttribute="trailing" constant="16" id="Dhm-mv-bWU"/>
+                            <constraint firstItem="l14-Nd-suX" firstAttribute="centerY" secondItem="TlT-Bf-E57" secondAttribute="centerY" id="Dmp-S8-2bT"/>
                             <constraint firstItem="0TY-Cc-JLo" firstAttribute="bottom" secondItem="t7O-yn-GAr" secondAttribute="bottom" constant="20" id="K3d-QB-tBD"/>
                             <constraint firstItem="l14-Nd-suX" firstAttribute="leading" secondItem="0TY-Cc-JLo" secondAttribute="leading" constant="16" id="Kys-f0-a8F"/>
                             <constraint firstItem="eVi-2a-N5a" firstAttribute="top" secondItem="0TY-Cc-JLo" secondAttribute="top" id="UGq-lA-czT"/>
                             <constraint firstItem="eVi-2a-N5a" firstAttribute="leading" secondItem="0TY-Cc-JLo" secondAttribute="leading" constant="16" id="VtM-Cx-IaU"/>
                             <constraint firstItem="l14-Nd-suX" firstAttribute="top" secondItem="eVi-2a-N5a" secondAttribute="bottom" constant="233.5" id="YJR-nn-jIA"/>
                             <constraint firstItem="0TY-Cc-JLo" firstAttribute="trailing" secondItem="U3K-63-Xpg" secondAttribute="trailing" constant="16" id="a8d-uE-LlX"/>
+                            <constraint firstItem="l14-Nd-suX" firstAttribute="centerX" secondItem="TlT-Bf-E57" secondAttribute="centerX" id="eJJ-fE-ZJd"/>
                             <constraint firstItem="0TY-Cc-JLo" firstAttribute="trailing" secondItem="t7O-yn-GAr" secondAttribute="trailing" constant="16" id="nY6-hP-0WD"/>
                             <constraint firstItem="dmS-9z-BYg" firstAttribute="leading" secondItem="0TY-Cc-JLo" secondAttribute="leading" constant="16" id="yw5-eu-8B2"/>
                         </constraints>
@@ -85,7 +81,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hb1-f9-CuR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1380" y="229"/>
+            <point key="canvasLocation" x="-1381.1594202898552" y="228.34821428571428"/>
         </scene>
         <!--Results-->
         <scene sceneID="dP2-dg-l4a">
@@ -141,7 +137,7 @@
                                 <rect key="frame" x="16" y="347" width="382" height="148.5"/>
                                 <subviews>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="LvT-sa-0gg">
-                                        <rect key="frame" x="88" y="0.0" width="206" height="31"/>
+                                        <rect key="frame" x="78" y="0.0" width="226" height="31"/>
                                     </slider>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7Ch-K2-zWs">
                                         <rect key="frame" x="87" y="64" width="208" height="20.5"/>
@@ -289,6 +285,25 @@
                     </view>
                     <navigationItem key="navigationItem" id="cgC-ar-pxn"/>
                     <connections>
+                        <outlet property="QuestionLabel" destination="hGA-Cw-JO6" id="Qj2-ey-bEn"/>
+                        <outlet property="multiLabel1" destination="OLd-5z-CIF" id="ITv-Ll-amc"/>
+                        <outlet property="multiLabel2" destination="lB5-jb-Wcc" id="FjA-3D-eZL"/>
+                        <outlet property="multiLabel3" destination="DEq-2l-Ff1" id="Jmx-QZ-rp0"/>
+                        <outlet property="multiLabel4" destination="aIZ-Se-Ua9" id="5Ek-gW-NnD"/>
+                        <outlet property="multiStack1" destination="OLd-5z-CIF" id="FBQ-vJ-ZZg"/>
+                        <outlet property="multiStack2" destination="DEq-2l-Ff1" id="yke-uG-s0b"/>
+                        <outlet property="multiStack3" destination="aIZ-Se-Ua9" id="xKd-xu-jpg"/>
+                        <outlet property="multipleStackView" destination="yYw-Fi-XQr" id="mOE-8L-hiG"/>
+                        <outlet property="questionLabel" destination="hGA-Cw-JO6" id="xzi-Ug-ff7"/>
+                        <outlet property="questionProgressView" destination="X5Y-pQ-eDz" id="LHM-FZ-0kg"/>
+                        <outlet property="rangedLabel1" destination="Co1-UC-Y5l" id="Tra-vt-3El"/>
+                        <outlet property="rangedLabel2" destination="ZIP-Va-d73" id="iM4-wk-sa6"/>
+                        <outlet property="rangedStackView" destination="7sR-gZ-l7n" id="G1h-ho-6dX"/>
+                        <outlet property="singleButton1" destination="hjR-8V-t3i" id="N4R-Ir-Cf9"/>
+                        <outlet property="singleButton2" destination="T6y-xg-0er" id="i9h-xO-AtV"/>
+                        <outlet property="singleButton3" destination="2cg-5N-ILt" id="jX6-er-1k8"/>
+                        <outlet property="singleButton4" destination="Ee5-nU-upp" id="Z6L-o6-x6G"/>
+                        <outlet property="singleStackView" destination="MdF-gX-V3U" id="ic8-bF-cEg"/>
                         <segue destination="4L8-11-deH" kind="show" identifier="RESULTS SEGUE" id="SoI-Cy-WNA"/>
                     </connections>
                 </viewController>

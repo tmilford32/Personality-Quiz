@@ -10,6 +10,35 @@ import UIKit
 
 class QuestionViewController: UIViewController {
     
+   
+    @IBOutlet var questionLabel: UILabel!
+    
+    
+    @IBOutlet var singleStackView: UIStackView!
+    @IBOutlet var singleButton1: UIButton!
+    
+    @IBOutlet var singleButton2: UIButton!
+    
+    @IBOutlet var singleButton3: UIButton!
+    
+    @IBOutlet var singleButton4: UIButton!
+    
+    
+    @IBOutlet var multipleStackView: UIStackView!
+    @IBOutlet var multiLabel1: UILabel!
+    @IBOutlet var multiLabel2: UILabel!
+    @IBOutlet var multiLabel3: UILabel!
+    @IBOutlet var multiLabel4: UILabel!
+    
+    
+    
+    @IBOutlet var rangedStackView: UIStackView!
+    @IBOutlet var rangedLabel1: UILabel!
+    @IBOutlet var rangedLabel2: UILabel!
+    
+    @IBOutlet var questionProgressView: UIProgressView!
+    
+    
     
     var questions: [Question] = [
         Question(text: "Which food do you like the most?",
@@ -45,9 +74,54 @@ class QuestionViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        updateUI()
+    }
+    func updateUI() {
+        
+        singleStackView.isHidden = true
+        multipleStackView.isHidden = true
+        rangedStackView.isHidden   = true
+        
+        navigationItem.title = "Question #\(questionIndex+1)"
+        
+        let currentQuestion = questions[questionIndex]
+        let currentAnswers = currentQuestion.answers
+        let totalProgress = Float(questionIndex) / Float(questions.count)
+        
+        questionLabel.text = currentQuestion.text
+        questionProgressView.setProgress(totalProgress, animated: true)
+      
+        switch currentQuestion.type {
+        case .single:
+            updateSingleStack(using: currentAnswers)
+            
+        case .multiple:
+            updateMultipleStack(using: currentAnswers)
+            
+        case  .ranged:
+           
+            updateRangedStack(using: currentAnswers)
+        
+        
+        }
+    
+    }
+    func updateSingleStack (using answers: [Answer]) {
+        singleStackView.isHidden = false
+        singleButton1.setTitle(answers[0].text, for: .normal)
+        singleButton2.setTitle(answers[1].text, for: .normal)
+        singleButton3.setTitle(answers[2].text, for: .normal)
+        singleButton4.setTitle(answers[3].text, for: .normal)
     }
     
-
+    func updateMultipleStack(using answers: [Answer]){
+         multipleStackView.isHidden = false
+    }
+    
+    func updateRangedStack(using answers: [Answer]){
+         rangedStackView.isHidden = false
+    }
+    
     /*
     // MARK: - Navigation
 
