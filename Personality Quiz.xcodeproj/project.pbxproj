@@ -65,13 +65,13 @@
 				47187FDA2523FC28004E350B /* AppDelegate.swift */,
 				47187FDC2523FC28004E350B /* SceneDelegate.swift */,
 				47187FDE2523FC28004E350B /* IntroductionViewController.swift */,
+				47187FEE25254A9B004E350B /* QuestionViewController.swift */,
+				47187FF025254AB1004E350B /* ResultsViewController.swift */,
+				47187FF225265915004E350B /* Question Data.swift */,
 				47187FE02523FC28004E350B /* Main.storyboard */,
 				47187FE32523FC2F004E350B /* Assets.xcassets */,
 				47187FE52523FC2F004E350B /* LaunchScreen.storyboard */,
 				47187FE82523FC2F004E350B /* Info.plist */,
-				47187FEE25254A9B004E350B /* QuestionViewController.swift */,
-				47187FF025254AB1004E350B /* ResultsViewController.swift */,
-				47187FF225265915004E350B /* Question Data.swift */,
 			);
 			path = "Personality Quiz";
 			sourceTree = "<group>";
