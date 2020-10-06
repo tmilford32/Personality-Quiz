@@ -94,7 +94,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="V7u-lG-KIj">
                                 <rect key="frame" x="16" y="377" width="382" height="88.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sfY-jc-aTp">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="sfY-jc-aTp">
                                         <rect key="frame" x="0.0" y="0.0" width="382" height="60"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                         <nil key="textColor"/>
@@ -132,6 +132,7 @@
         <!--Question View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="QuestionViewController" customModule="Personality_Quiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
@@ -271,7 +272,6 @@
                                         <state key="normal" title="Submit Answer"/>
                                         <connections>
                                             <action selector="multipleAnswerButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="0kd-i0-x7x"/>
-                                            <action selector="multipleAnswerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XQP-U9-4VZ"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -328,10 +328,9 @@
                         <outlet property="singleButton3" destination="2cg-5N-ILt" id="jX6-er-1k8"/>
                         <outlet property="singleButton4" destination="Ee5-nU-upp" id="Z6L-o6-x6G"/>
                         <outlet property="singleStackView" destination="MdF-gX-V3U" id="ic8-bF-cEg"/>
-                        <segue destination="4L8-11-deH" kind="show" identifier="RESULTS SEGUE" id="SoI-Cy-WNA"/>
+                        <segue destination="4L8-11-deH" kind="show" identifier="ResultsSegue" id="SoI-Cy-WNA"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="398.55072463768118" y="227.67857142857142"/>
         </scene>

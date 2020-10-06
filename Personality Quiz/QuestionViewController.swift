@@ -190,6 +190,8 @@ class QuestionViewController: UIViewController {
      let index = Int(round(rangedSlider.value * Float(currentAnswers.count - 1)))
      
         answersChosen.append(currentAnswers[index])
+   
+       nextQuestion()
     }
     
     func nextQuestion(){
