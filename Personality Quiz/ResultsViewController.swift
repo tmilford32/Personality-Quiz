@@ -38,7 +38,7 @@ class ResultsViewController: UIViewController {
     
         let mostCommonAnswer = frequentAnswersSorted.first!.key
         
-        resultAnswerLabel.text = "Your favorit City is\(mostCommonAnswer.rawValue)!"
+        resultAnswerLabel.text = "Your favorite City is\(mostCommonAnswer.rawValue)!"
         
         resultDefinitionLabel.text = mostCommonAnswer.definition
         
